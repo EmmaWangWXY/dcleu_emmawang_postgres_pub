@@ -18,6 +18,6 @@ dimension_group: series {
     quarter,
     year
   ]
-#   sql: generate_series('2019-01-01'::timestamp, '2019-12-31', '1 day') ;;
+  sql: generate_series('2019-01-01'::timestamp, '2019-12-31', '1 day') ;;
 }
 }
