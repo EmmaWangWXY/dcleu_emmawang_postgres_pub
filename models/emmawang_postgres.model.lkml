@@ -1,4 +1,4 @@
-connection: "donotchange_romain_gcp_postgres"
+connection: "@{connection}"
 
 # include all the views
 include: "/views/**/*.view"
@@ -26,13 +26,13 @@ explore: order_items {
   }
 }
 
-explore: calendar {
-  join: orders {
-    sql_on: ${calendar.series_date} = ${orders.created_date};;
-    type: left_outer
-    relationship: one_to_many
-  }
-}
+# explore: calendar {
+#   join: orders {
+#     sql_on: ${calendar.series_date} = ${orders.created_date};;
+#     type: left_outer
+#     relationship: one_to_many
+#   }
+# }
 explore: orders {
   join: users {
     type: left_outer
