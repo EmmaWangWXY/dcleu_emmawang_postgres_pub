@@ -43,6 +43,6 @@ explore: orders {
 
 explore: users {}
 
-explore: NDT_test  {
-  view_name: NDT_test
-}
+# explore: NDT_test  {
+#   view_name: NDT_test
+# }
