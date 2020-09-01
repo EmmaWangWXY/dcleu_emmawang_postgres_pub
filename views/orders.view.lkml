@@ -6,6 +6,10 @@ view: orders {
     primary_key: yes
     type: number
     sql: ${TABLE}."id" ;;
+    link: {
+      label: "embed test"
+      url: "/dashboards/385"
+    }
   }
 
   parameter: date_granularity {
