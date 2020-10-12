@@ -1,5 +1,5 @@
 connection: "@{connection}"
-
+# can you see me
 # include all the views
 include: "/views/**/*.view"
 
