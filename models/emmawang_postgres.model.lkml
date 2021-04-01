@@ -1,4 +1,5 @@
-connection: "@{connection}"
+# connection: "@{connection}"
+connection: "thelook"
 
 # include all the views
 include: "/views/**/*.view"
@@ -42,6 +43,8 @@ explore: orders {
 }
 
 explore: users {}
+
+explore: table_pivot_bug {}
 
 # explore: NDT_test  {
 #   view_name: NDT_test

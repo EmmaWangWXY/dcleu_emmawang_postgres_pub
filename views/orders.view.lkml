@@ -67,6 +67,7 @@ view: orders {
 
   measure: count {
     type: count
+    value_format: "$#,##0.00"
     drill_fields: [id, users.id, users.name, order_items.count]
   }
 
